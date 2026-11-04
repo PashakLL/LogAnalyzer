@@ -1,9 +1,7 @@
 with open("test.log") as f:
-    line = f.readlines()
-
-count = 0
+    lines = f.readlines()
 
 
-for i in line:
-    count += 1
-print(count)
+print(len(lines))
+parts = lines[0].split()
+print(parts)
