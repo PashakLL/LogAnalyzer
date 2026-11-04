@@ -1,0 +1,12 @@
+2026-11-04 10:15:01 INFO login_ok user=admin ip=192.0.2.10
+2026-11-04 10:15:09 WARNING login_failed user=root ip=198.51.100.7
+2026-11-04 10:15:11 WARNING login_failed user=root ip=198.51.100.7
+2026-11-04 10:15:14 WARNING login_failed user=admin ip=198.51.100.7
+2026-11-04 10:16:02 INFO login_ok user=anna ip=192.0.2.21
+2026-11-04 10:17:45 ERROR disk_full host=srv1
+2026-11-04 10:18:30 INFO login_ok user=anna ip=192.0.2.21
+2026-11-04 10:19:03 WARNING login_failed user=test ip=203.0.113.9
+2026-11-04 10:20:12 ERROR service_down host=srv2
+2026-11-04 10:21:40 INFO login_ok user=admin ip=192.0.2.10
+2026-11-04 10:22:05 WARNING login_failed user=root ip=198.51.100.7
+битая строка без формата
