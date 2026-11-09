@@ -24,7 +24,14 @@ for i in range(len(lines)):
         levels[level] += 1
     else:
         levels[level] = 1
-print(levels)
-print(failed_by_ip)
-print(f"Ошибочная строка: {brokenline}")
-print(f"Не удачные входы: {failed}")
+
+sorted_failed_by_ip = sorted(failed_by_ip.items(), key=lambda item: item[1], reverse=True)
+
+
+
+print(f"Подсчет по записям: {levels}\n")
+print("IP с неудачными входами")
+for ip_error, count in sorted_failed_by_ip:
+    print(f"{ip_error} - {count}")
+print(f"\nОшибочная строка: {brokenline}")
+print(f"\nНе удачные входы: {failed}")
