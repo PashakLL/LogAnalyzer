@@ -1,11 +1,16 @@
-with open("test.log") as f:
-    lines = f.readlines()
-
-
+file_log = input("введите название файла с логами - ")
 levels = {}
 failed_by_ip = {}
 failed = 0
 brokenline = 0
+
+
+try:
+    with open(file_log) as f:
+        lines = f.readlines()
+except FileNotFoundError as error:
+    print(f"Файл не найден по причине {error}")
+    exit()
 
 for i in range(len(lines)):
     parts = lines[i].split()
